@@ -1,38 +1,90 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Fira Code', monospace;
+    background-color: #1e1e2f;
+    color: #cfcfd1;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #282a36;
+}
+
+nav h1 {
+    color: #50fa7b;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
     margin: 0;
     padding: 0;
 }
 
+nav ul li a {
+    color: #cfcfd1;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #50fa7b;
+}
+
 header {
-    background-color: #007acc;
-    color: white;
-    padding: 20px;
     text-align: center;
+    padding: 50px 20px;
+    background-color: #44475a;
+    color: white;
 }
 
 section {
-    padding: 20px;
-    max-width: 800px;
+    padding: 40px 20px;
+    max-width: 1000px;
     margin: auto;
 }
 
-h1, h2 {
-    color: #007acc;
+h3 {
+    color: #8be9fd;
+    font-size: 2em;
 }
 
-ul {
-    list-style-type: square;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-grid li {
+    background-color: #6272a4;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.project-card {
+    background-color: #44475a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.project-card h4 {
+    color: #ff79c6;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #007acc;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 20px;
+    background-color: #282a36;
+    color: #cfcfd1;
 }

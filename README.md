@@ -1,43 +1,51 @@
-# Susheel Kumar Pandey - Dark Coder Portfolio 💻🌌
+# Welcome to My GitHub Page!
 
-Welcome to my developer portfolio! This website highlights my skills, experience, and GitHub repositories, presented in a sleek dark theme for the ultimate coding aesthetic.
+Hello! I'm **Susheel Kumar Pandey**, a passionate **Software Engineer** specializing in **AI**, **Computer Vision**, and **Data Analysis**. I love solving real-world problems using technology and creating scalable, efficient solutions. 
 
-## 🔗 Explore My Portfolio
-- [Skills](#skills)
-- [GitHub Repositories](#github-repositories)
-- [Contact Me](#contact-me)
+## About Me
+- **Email**: [susheel123pandey@gmail.com](mailto:susheel123pandey@gmail.com)  
+- **LinkedIn**: [Connect with me](#)  
+- **Phone**: +91 7860377399  
 
----
+## Skills
+### Programming Languages  
+- Python  
+- Shell Scripting  
 
-## 🧑‍💻 About Me
-I am a Software Engineer specializing in AI, ML, and Data Analysis. Passionate about leveraging advanced technologies to create impactful solutions. My focus is on scalability, efficiency, and solving real-world problems with code.
+### Libraries and Frameworks  
+- Pandas, NumPy, Scikit-Learn, Matplotlib, OpenCV  
+- TensorFlow, PyTorch  
 
----
+### Tools and Platforms  
+- GIT, JIRA, Docker, Markdown, vim  
 
-## 🛠 Skills
-- **Programming Languages**: Python 🐍, Shell Scripting 💻
-- **Frameworks & Tools**: PyTorch, TensorFlow, YOLO, FastAPI
-- **Technologies**: Docker 🐳, Git, Linux 🐧
-- **Specializations**: Computer Vision, Object Detection, Data Analysis
+### AI & ML Architectures  
+- YOLO (v5, v7, v8), Mobilenet_v2, ArcFace  
+- Expertise in object detection, computer vision, NLP, and edge optimization  
 
----
+### UI/UX Design  
+- QT Designer  
 
-## 📂 GitHub Repositories
-Here are some of my featured repositories:
-- [AI-Powered Microservices](https://github.com/susheel7860/ai-microservices)  
-  Scalable microservices integrating state-of-the-art AI models.
-- [Driver Monitoring System](https://github.com/susheel7860/driver-monitoring-system)  
-  Real-time detection of driver fatigue and distractions.
-- [3D Building Automation](https://github.com/susheel7860/3d-building-automation)  
-  Automating large-scale urban mapping with Python and geospatial data.
-- [QGIS Plugin for Image Analysis](https://github.com/susheel7860/qgis-image-analysis)  
-  AI-driven geospatial data analysis and visualization.
+### Other Skills  
+- Data Management & Pipelines  
+- Operating Systems: Linux and Windows  
+- Report Building, Team Collaboration, and Stakeholder Management  
 
----
+## Professional Experience
+### Software Engineer at **MapMyIndia**, New Delhi  
+**March 2021 – Present**  
+- Conducted 100+ experiments with YOLO for real-time object detection.  
+- Built and deployed scalable AI architectures for various applications.  
+- Developed AI models optimized for edge devices and high-performance APIs.  
+- Designed data pipelines and automated large-scale geospatial data analysis.  
 
-## 📧 Contact Me
-- Email: [susheel123pandey@gmail.com](mailto:susheel123pandey@gmail.com)  
-- LinkedIn: [Susheel Kumar Pandey](https://www.linkedin.com/in/susheel7860/)  
-- GitHub: [susheel7860](https://github.com/susheel7860)
+## Dummy Projects
+Below are some placeholder projects to illustrate my portfolio structure:
+1. **Smart Traffic Management System**: Leveraged AI to optimize traffic flow and reduce congestion in metropolitan areas.  
+2. **E-commerce Product Recommendation Engine**: Built a system to recommend products based on customer behavior and preferences.  
+3. **AI Chatbot for Healthcare Assistance**: Developed a chatbot to assist users with health-related queries using NLP techniques.  
+4. **IoT-Enabled Smart Home Assistant**: Created a system to automate home devices with AI-driven predictions.  
+5. **Real-Time Wildlife Monitoring**: Designed a solution to track and analyze wildlife activity for conservation efforts.  
 
----
+## Let's Connect
+Feel free to reach out to me via email or LinkedIn for any collaboration opportunities or just to chat about tech and innovation!

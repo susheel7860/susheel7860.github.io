@@ -21,7 +21,7 @@ Hi! I'm **Susheel Kumar Pandey**, a passionate software engineer specializing in
 
 ---
 
-## 📂 Resume Projects
+## 📂 Projects
 
 ### 🚗 **Driver Monitoring System (DMS)**
 A real-time AI solution designed to monitor driver behavior:

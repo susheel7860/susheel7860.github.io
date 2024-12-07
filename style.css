@@ -5,7 +5,7 @@ body {
     color: #e0e0e0;
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
 }
 
 /* Header */
@@ -27,33 +27,45 @@ header p {
 
 /* Sections */
 section {
+    margin: 20px auto;
     padding: 20px;
-    margin: 20px;
+    max-width: 800px;
     background-color: #1e1e1e;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Tables */
-.skills-table table {
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+}
+
+section h2 {
+    color: #ff8800;
+    margin-bottom: 10px;
+}
+
+/* Table */
+table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
-.skills-table th, .skills-table td {
-    border: 1px solid #333;
+table th, table td {
+    border: 1px solid #444;
     padding: 10px;
     text-align: left;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.skills-table th {
+table th {
     background-color: #333;
     color: #ffd700;
 }
 
-.skills-table td:hover {
+table td:hover {
     background-color: #444;
     color: #fff;
 }
@@ -76,5 +88,5 @@ footer {
     padding: 10px;
     background-color: #333;
     border-top: 3px solid #444;
+    color: #bbb;
 }
-

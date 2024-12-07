@@ -1,79 +1,23 @@
-# Welcome to My GitHub Page! 🌌
+# 🌌 Susheel Kumar Pandey's Portfolio 
 
-## 🧑‍💻 About Me
-Hi! I'm **Susheel Kumar Pandey**, a passionate **Software Engineer** specializing in **AI**, **Computer Vision**, and **Data Analysis**. I love solving real-world problems with clean, scalable code. This page reflects my journey as a coder.
+Hi! I'm **Susheel Kumar Pandey**, a software engineer passionate about **AI, Computer Vision, and NLP**. 🚀 Check out my GitHub projects and professional journey here. 👨‍💻
 
-### 📫 Get in Touch
-- **Email**: [susheel123pandey@gmail.com](mailto:susheel123pandey@gmail.com)  
-- **LinkedIn**: [Connect with me](https://linkedin.com)  
-- **Portfolio**: [Visit My Website](https://yourwebsite.com)  
-- **Phone**: +91 7860377399  
+## 🛠️ Skills & Tools
 
----
+| Skill Type      | Skills                                                                                                                                  |
+|------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| **Languages**   | 🐍 Python, 🐚 Shell Scripting                                                                                                         |
+| **Libraries**   | 🧮 Pandas, 📊 NumPy, 📈 Scikit-Learn, 🖼️ Matplotlib, 🤖 OpenCV, 🔬 TensorFlow, 🏋️ PyTorch                                              |
+| **Platforms**   | 🐳 Docker, 📂 GIT, 📑 JIRA, 🔧 vim                                                                                                    |
+| **Specialties** | 🛠️ Object Detection, 👁️‍🗨️ Computer Vision, 🧠 AI/ML Architectures, 🧪 Data Analysis, ✍️ NLP                                           |
+| **Operating Systems** | 🐧 Linux, 🪟 Windows                                                                                                            |
 
-## 🛠️ Skills at a Glance
+## 📂 Notable Repositories
 
-| **Category**             | **Skills**                                                                                      |
-|---------------------------|------------------------------------------------------------------------------------------------|
-| **Languages**            | Python, Shell Scripting                                                                       |
-| **Libraries/Frameworks** | Pandas, NumPy, Scikit-Learn, Matplotlib, OpenCV, TensorFlow, PyTorch                          |
-| **AI & ML Architectures**| YOLO (v5, v7, v8), Mobilenet_v2, ArcFace                                                     |
-| **Platforms**            | Docker, Git, JIRA, Markdown, vim                                                             |
-| **Specializations**      | Object Detection, NLP, Computer Vision, Edge Optimization, Data Analysis                     |
-| **Tools**                | QT Designer, TensorFlow Core AI                                                              |
-| **Soft Skills**          | Report Building, Team Collaboration, Stakeholder Management                                  |
+- 🌟 **[Driver Monitoring System (DMS)](https://github.com/yourrepo1)**: A real-time system for detecting distracted driving and driver fatigue. 🚗
+- 🛡️ **[Face Verification with ArcFace](https://github.com/yourrepo2)**: High-accuracy face recognition using InsightFace and PyTorch.
+- 🛰️ **[AI Geospatial Analysis Plugin](https://github.com/yourrepo3)**: A QGIS plugin for satellite and street image analysis. 🗺️
 
----
-
-## 🚀 Projects
-
-### Featured Projects
-#### 🔷 **Smart Traffic Management**
-Optimized urban traffic flow using AI and Computer Vision.  
-**Technologies**: Python, YOLO, OpenCV  
-
-#### 🔷 **AI Chatbot for Healthcare**
-Developed a chatbot to assist users with health-related queries using NLP.  
-**Technologies**: PyTorch, Flask, NLP Frameworks  
-
-#### 🔷 **IoT Smart Home Assistant**
-Automated home devices with AI-driven predictions and seamless integration.  
-**Technologies**: TensorFlow, IoT  
-
----
-
-## 🌐 Interactive Widgets
-
-<div align="center">
-  
-![Susheel's GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-github-username&show_icons=true&theme=radical)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=your-github-username&layout=compact&theme=radical)
-
-</div>
-
----
-
-## 🖼️ Featured Repositories
-
-<div align="center">
-  
-<a href="https://github.com/your-github-username/repo1">
-<img src="https://via.placeholder.com/250x150.png?text=Repo+1" alt="Repo 1" style="margin: 10px;">
-</a>
-
-<a href="https://github.com/your-github-username/repo2">
-<img src="https://via.placeholder.com/250x150.png?text=Repo+2" alt="Repo 2" style="margin: 10px;">
-</a>
-
-</div>
-
----
-
-## 💡 Let's Collaborate
-Got an interesting project or idea? Let’s code together and build something impactful. Drop me a message or connect on LinkedIn!
-
----
-
-> "Code is like humor. When you have to explain it, it’s bad."  
-> — Cory House
+### 📬 Get in Touch
+- Email: [susheel123pandey@gmail.com](mailto:susheel123pandey@gmail.com)
+- LinkedIn: [Profile](https://www.linkedin.com/in/susheel-kumar-pandey/)

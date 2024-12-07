@@ -1,64 +1,55 @@
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: #c7c7c7;
     background-color: #121212;
-    color: #ffffff;
     line-height: 1.6;
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 20px;
-    background-color: #1f1f1f;
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3b);
+    color: #ffffff;
 }
 
 header h1 {
-    font-size: 2.5em;
-    color: #00bcd4;
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
 }
 
 header p {
-    font-size: 1.2em;
-    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0;
+    color: #bbb;
 }
 
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #1f1f1f;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Main Section */
+main {
+    padding: 1.5rem;
 }
 
-nav a {
-    color: #00bcd4;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffffff;
-}
-
-/* Sections */
 section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #1e1e1e;
-    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #1a1a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 section h2 {
-    color: #00bcd4;
+    color: #50c8ff;
+    border-bottom: 2px solid #50c8ff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-list h3 {
+    margin-top: 1rem;
+    color: #72d1ff;
 }
 
 ul {
@@ -67,13 +58,36 @@ ul {
 }
 
 ul li {
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #1f1f1f;
-    color: #757575;
+    padding: 1rem 0;
+    background: #101010;
+    color: #888;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #50c8ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Links */
+a {
+    color: #50c8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

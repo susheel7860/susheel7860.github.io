@@ -4,13 +4,12 @@ Hi! I'm **Susheel Kumar Pandey**, a passionate software engineer specializing in
 
 ## 🛠️ Skills & Tools
 
-| 💻 **Skill Type**       | ✨ **Details**                                                                                                                                           |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Languages**           | `Python` 🐍, `Shell Scripting` 🖥️                                                                                                                       |
 | **Libraries & Frameworks** | `Pandas` 🧮, `NumPy` 📊, `Scikit-Learn` 📈, `Matplotlib` 📉, `OpenCV` 🖼️, `TensorFlow` 🤖, `PyTorch` 🏋️, `YOLO (v5, v7, v8)` 🔍                        |
 | **Platforms & Tools**   | `Docker` 🐳, `GIT` 📂, `JIRA` 📑, `vim` 🔧                                                                                                               |
 | **Specialties**         | Object Detection 👁️‍🗨️, Computer Vision 🖥️, AI Architectures 🛠️, NLP ✍️                                                                                   |
-| **Operating Systems**   | `Linux` 🐧, `Windows` 🪟                                                                                                                                |
+| **Operating Systems**   | `Linux` 🐧, `Windows`                                                                                                                                |
 | **Data Pipelines**      | Expertise in automating data workflows, training pipelines, and managing large-scale datasets for AI applications 🚦                                     |
 
 ---

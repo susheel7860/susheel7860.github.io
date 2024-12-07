@@ -50,6 +50,11 @@ nav ul li {
 nav ul li a {
     color: #50c8ff;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
 }
 
 /* Sections */
@@ -58,6 +63,7 @@ section {
     padding: 20px;
     background: #1a1a1a;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
@@ -65,17 +71,43 @@ section h2 {
     margin-bottom: 15px;
 }
 
-/* Skills Grid */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+/* Scrollable Containers */
+.scrollable-container {
+    display: flex;
+    overflow-x: auto;
     gap: 20px;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #50c8ff transparent;
 }
 
-.skills-grid div {
+.scrollable-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #50c8ff;
+    border-radius: 10px;
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tile {
+    min-width: 200px;
     background: #292929;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Footer */

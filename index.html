@@ -1,117 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Susheel Kumar Pandey | Senior Software Engineer</title>
+  <title>Susheel Kumar Pandey | AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Susheel Kumar Pandey</h1>
-    <p>Senior Software Engineer | AI, Computer Vision & GenAI</p>
-    <p>New Delhi, India</p>
+  <!-- Animated Background Grid -->
+  <div class="grid-bg"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="nav-logo">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" stroke="url(#logoGradient)" stroke-width="2" />
+        <circle cx="20" cy="20" r="6" fill="url(#logoGradient)" />
+        <circle cx="20" cy="8" r="3" fill="#00d4ff" />
+        <circle cx="20" cy="32" r="3" fill="#00d4ff" />
+        <circle cx="8" cy="20" r="3" fill="#7b5cff" />
+        <circle cx="32" cy="20" r="3" fill="#7b5cff" />
+        <line x1="20" y1="11" x2="20" y2="14" stroke="#00d4ff" stroke-width="1.5" />
+        <line x1="20" y1="26" x2="20" y2="29" stroke="#00d4ff" stroke-width="1.5" />
+        <line x1="11" y1="20" x2="14" y2="20" stroke="#7b5cff" stroke-width="1.5" />
+        <line x1="26" y1="20" x2="29" y2="20" stroke="#7b5cff" stroke-width="1.5" />
+        <defs>
+          <linearGradient id="logoGradient" x1="0" y1="0" x2="40" y2="40">
+            <stop offset="0%" stop-color="#00d4ff" />
+            <stop offset="100%" stop-color="#7b5cff" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        <span>Available for opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line line-1">Building</span>
+        <span class="line line-2"><span class="highlight">Intelligent</span> Systems</span>
+        <span class="line line-3">That Scale</span>
+      </h1>
+      <p class="hero-subtitle">
+        Senior AI Engineer crafting production-grade Computer Vision, LLM, and Geospatial systems.
+        <span class="stat-inline">4+ years</span> of delivering ML solutions processing <span class="stat-inline">1M+
+          records/day</span>.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <span>View Projects</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="neural-network">
+        <div class="node node-1"></div>
+        <div class="node node-2"></div>
+        <div class="node node-3"></div>
+        <div class="node node-4"></div>
+        <div class="node node-5"></div>
+        <div class="node node-6"></div>
+        <div class="node node-center"></div>
+        <svg class="connections" viewBox="0 0 300 300">
+          <line class="conn" x1="50" y1="50" x2="150" y2="150" />
+          <line class="conn" x1="250" y1="50" x2="150" y2="150" />
+          <line class="conn" x1="50" y1="250" x2="150" y2="150" />
+          <line class="conn" x1="250" y1="250" x2="150" y2="150" />
+          <line class="conn" x1="150" y1="30" x2="150" y2="150" />
+          <line class="conn" x1="150" y1="270" x2="150" y2="150" />
+        </svg>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="stat">
+      <span class="stat-number" data-target="97">97</span><span class="stat-symbol">%</span>
+      <span class="stat-label">CV Model Accuracy</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-number">1M+</span>
+      <span class="stat-label">Daily Records Processed</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-number">&lt;150</span><span class="stat-symbol">ms</span>
+      <span class="stat-label">Real-time Latency</span>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat">
+      <span class="stat-number">50+</span>
+      <span class="stat-label">Concurrent Users</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-header">
+      <span class="section-number">01</span>
       <h2>About Me</h2>
-      <p>
-        I am a Senior Software Engineer with 3.8+ years of experience building
-        production-grade AI, Computer Vision, and LLM-based systems. I specialize
-        in multi-agent LLM architectures, real-time vision systems, geospatial
-        intelligence, and scalable AI platforms. I have delivered systems
-        processing over 1M records per day with strong focus on performance,
-        reliability, and deployment.
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p class="lead">
+          I'm <strong>Susheel Kumar Pandey</strong>, a Senior Software Engineer at MapmyIndia,
+          where I architect AI systems that transform raw data into actionable intelligence.
+        </p>
+        <p>
+          My work spans the full spectrum of applied AI — from real-time computer vision systems
+          detecting driver drowsiness at 97% accuracy, to multi-agent LLM platforms that convert
+          natural language into complex geospatial queries. I've built systems that handle the
+          scale and reliability demands of production environments while pushing the boundaries
+          of what's technically possible.
+        </p>
+        <p>
+          What drives me is the intersection of cutting-edge AI research and practical engineering —
+          taking papers and prototypes and turning them into systems that solve real problems for
+          real users.
+        </p>
+      </div>
+      <div class="about-details">
+        <div class="detail-card">
+          <div class="detail-icon">📍</div>
+          <div class="detail-info">
+            <span class="detail-label">Location</span>
+            <span class="detail-value">New Delhi, India</span>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">🎓</div>
+          <div class="detail-info">
+            <span class="detail-label">Education</span>
+            <span class="detail-value">B.Tech in CSE, GLA University</span>
+          </div>
+        </div>
+        <div class="detail-card">
+          <div class="detail-icon">💼</div>
+          <div class="detail-info">
+            <span class="detail-label">Current Role</span>
+            <span class="detail-value">Sr. Software Engineer @ MapmyIndia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expertise Section -->
+  <section id="expertise" class="expertise-section">
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h2>Technical Expertise</h2>
+    </div>
+    <div class="expertise-grid">
+      <div class="expertise-card" data-category="cv">
+        <div class="card-header">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+          </div>
+          <h3>Computer Vision</h3>
+        </div>
+        <div class="card-body">
+          <p>Real-time detection systems optimized for edge deployment with sub-150ms latency.</p>
+          <div class="tech-tags">
+            <span>YOLO v5/v7/v8</span>
+            <span>ArcFace</span>
+            <span>Mask R-CNN</span>
+            <span>MobileNet v2</span>
+            <span>Edge Optimization</span>
+          </div>
+        </div>
+        <div class="card-metric">
+          <span class="metric-value">97%</span>
+          <span class="metric-label">Detection Accuracy</span>
+        </div>
+      </div>
+
+      <div class="expertise-card" data-category="llm">
+        <div class="card-header">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3>LLM & GenAI</h3>
+        </div>
+        <div class="card-body">
+          <p>Multi-agent architectures for intent classification, SQL generation, and semantic search.</p>
+          <div class="tech-tags">
+            <span>Mistral 7B</span>
+            <span>LLaMA 3 70B</span>
+            <span>LangChain</span>
+            <span>HuggingFace</span>
+            <span>Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="card-metric">
+          <span class="metric-value">35%</span>
+          <span class="metric-label">Search Accuracy Boost</span>
+        </div>
+      </div>
+
+      <div class="expertise-card" data-category="geo">
+        <div class="card-header">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path
+                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <h3>Geospatial AI</h3>
+        </div>
+        <div class="card-body">
+          <p>Spatial analytics with PostGIS, dimensional modeling, and interactive visualization.</p>
+          <div class="tech-tags">
+            <span>PostgreSQL</span>
+            <span>PostGIS</span>
+            <span>Pydeck</span>
+            <span>QGIS</span>
+            <span>Spatial Queries</span>
+          </div>
+        </div>
+        <div class="card-metric">
+          <span class="metric-value">65%</span>
+          <span class="metric-label">Automation Gain</span>
+        </div>
+      </div>
+
+      <div class="expertise-card" data-category="eng">
+        <div class="card-header">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h3>Engineering</h3>
+        </div>
+        <div class="card-body">
+          <p>Production-grade APIs, containerized deployments, and optimized ML pipelines.</p>
+          <div class="tech-tags">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Docker</span>
+            <span>CI/CD</span>
+            <span>Streamlit</span>
+          </div>
+        </div>
+        <div class="card-metric">
+          <span class="metric-value">50%</span>
+          <span class="metric-label">Pipeline Speedup</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="projects-container">
+
+      <article class="project-card featured">
+        <div class="project-visual">
+          <div class="project-diagram">
+            <div class="diagram-flow">
+              <div class="flow-node">NL Query</div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-node agent">Intent Agent</div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-node agent">SQL Generator</div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-node">BI Insights</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span class="project-tag">Production</span>
+            <span class="project-tag">Multi-Agent LLM</span>
+          </div>
+          <h3>Footfall Analysis LLM Agent Platform</h3>
+          <p>
+            Production multi-agent system converting natural language queries into business
+            intelligence insights. Features Intent Agent (Mistral 7B), SQL Generator (LLaMA 3 70B),
+            Executor, and Summarizer working in concert.
+          </p>
+          <div class="project-stats">
+            <div class="project-stat">
+              <span class="value">1M+</span>
+              <span class="label">Daily Records</span>
+            </div>
+            <div class="project-stat">
+              <span class="value">15-30s</span>
+              <span class="label">Query Latency</span>
+            </div>
+            <div class="project-stat">
+              <span class="value">~50</span>
+              <span class="label">Concurrent Users</span>
+            </div>
+          </div>
+          <ul class="project-highlights">
+            <li>3-layer dimensional model (Search, Directions, Navigation)</li>
+            <li>Schema-aware SQL generation with automated validation</li>
+            <li>PostGIS spatial queries with Pydeck visualization</li>
+            <li>100+ test case framework reducing manual testing by 75%</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-content">
+          <div class="project-meta">
+            <span class="project-tag">Computer Vision</span>
+            <span class="project-tag">Edge AI</span>
+          </div>
+          <h3>Driver Monitoring System</h3>
+          <p>
+            Real-time detection of driver drowsiness and distraction with YOLO v7,
+            optimized for edge deployment in fleet management systems.
+          </p>
+          <div class="project-stats">
+            <div class="project-stat">
+              <span class="value">97%+</span>
+              <span class="label">Accuracy</span>
+            </div>
+            <div class="project-stat">
+              <span class="value">&lt;150ms</span>
+              <span class="label">Response Time</span>
+            </div>
+            <div class="project-stat">
+              <span class="value">1000+</span>
+              <span class="label">Daily Verifications</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-content">
+          <div class="project-meta">
+            <span class="project-tag">Geospatial</span>
+            <span class="project-tag">3D Modeling</span>
+          </div>
+          <h3>Geospatial AI & 3D Automation</h3>
+          <p>
+            QGIS plugins for satellite imagery analysis and automated city-scale
+            3D building generation from aerial imagery and DEM data.
+          </p>
+          <div class="project-stats">
+            <div class="project-stat">
+              <span class="value">65%</span>
+              <span class="label">Effort Reduction</span>
+            </div>
+            <div class="project-stat">
+              <span class="value">40%</span>
+              <span class="label">Model Size Cut</span>
+            </div>
+            <div class="project-stat">
+              <span class="value">25%</span>
+              <span class="label">Data Accuracy Gain</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-content">
+          <div class="project-meta">
+            <span class="project-tag">NLP</span>
+            <span class="project-tag">Open Source</span>
+          </div>
+          <h3>Amazon Food Review System</h3>
+          <p>
+            NLP-based system for extracting insights from customer reviews,
+            featuring sentiment analysis and topic modeling.
+          </p>
+          <a href="https://github.com/susheel7860/amazon-food-review-system" class="project-link" target="_blank">
+            View on GitHub
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Timeline/Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="section-header">
+      <span class="section-number">04</span>
+      <h2>Experience</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Apr 2024 — Present</div>
+          <h3>Senior Software Engineer</h3>
+          <p class="timeline-company">MapmyIndia • New Delhi</p>
+          <p>Leading development of LLM-based analytics platform, multi-agent architectures, and semantic search
+            systems.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Mar 2022 — Mar 2024</div>
+          <h3>Software Engineer</h3>
+          <p class="timeline-company">MapmyIndia • New Delhi</p>
+          <p>Built production CV systems including DMS, face recognition, and geospatial AI tools. Scaled ML
+            microservices to 200+ concurrent requests.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-date">Sep 2021 — Feb 2022</div>
+          <h3>Trainee Engineer</h3>
+          <p class="timeline-company">MapmyIndia • New Delhi</p>
+          <p>Developed QGIS plugins and YOLO v8-based detection models achieving 94% precision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-header">
+      <span class="section-number">05</span>
+      <h2>Let's Connect</h2>
+    </div>
+    <div class="contact-content">
+      <p class="contact-intro">
+        Interested in AI, GenAI, Computer Vision, or Geospatial projects?
+        I'm always open to discussing new opportunities and collaborations.
       </p>
-    </section>
+      <div class="contact-links">
+        <a href="mailto:susheel123pandey@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">susheel123pandey@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/susheel7860" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/susheel7860</span>
+          </div>
+        </a>
+        <a href="https://github.com/susheel7860" target="_blank" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/susheel7860</span>
+          </div>
+        </a>
+        <a href="tel:+917860377399" class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91-7860377399</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <section id="skills">
-      <h2>Skills & Expertise</h2>
-      <table>
-        <tr>
-          <th>Category</th>
-          <th>Details</th>
-        </tr>
-        <tr>
-          <td>Programming Languages</td>
-          <td>Python, Shell Scripting</td>
-        </tr>
-        <tr>
-          <td>AI & Computer Vision</td>
-          <td>YOLO v5, YOLO v7, YOLO v8, ArcFace, Mask R-CNN, MobileNet v2</td>
-        </tr>
-        <tr>
-          <td>Generative AI & LLMs</td>
-          <td>Mistral 7B, LLaMA 3 (70B), Ollama, LangChain, HuggingFace, Prompt Engineering</td>
-        </tr>
-        <tr>
-          <td>Data & Geospatial</td>
-          <td>PostgreSQL, PostGIS, Spatial Queries, Dimensional Modeling, Pydeck, QGIS</td>
-        </tr>
-        <tr>
-          <td>Engineering & DevOps</td>
-          <td>FastAPI, Docker, CI/CD, Git, JIRA, Streamlit</td>
-        </tr>
-        <tr>
-          <td>Operating Systems</td>
-          <td>Linux, Windows</td>
-        </tr>
-      </table>
-    </section>
-
-    <section id="projects">
-      <h2>Key Projects</h2>
-      <ul>
-        <li>
-          <strong>Footfall Analysis LLM Agent Platform</strong><br>
-          Multi-agent LLM system converting natural language queries into business
-          intelligence insights. Processes 1M+ mobility records per day using
-          schema-aware SQL generation and PostGIS-based spatial visualization.
-        </li>
-        <li>
-          <strong>Driver Monitoring System (DMS)</strong><br>
-          Real-time detection of driver drowsiness and distraction using YOLO v7,
-          achieving 97%+ accuracy with response times under 150 ms and optimized
-          for edge deployment.
-        </li>
-        <li>
-          <strong>Geospatial AI & Automation</strong><br>
-          QGIS plugins for satellite imagery analysis and automated city-scale 3D
-          building generation, reducing manual modeling effort by 65%.
-        </li>
-      </ul>
-    </section>
-
-    <section id="repositories">
-      <h2>Featured GitHub Repositories</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/susheel7860/amazon-food-review-system">
-            Amazon Food Review System
-          </a>
-          – NLP-based system for extracting insights from customer reviews.
-        </li>
-        <li>
-          <a href="https://github.com/susheel7860">
-            AI & Geospatial Projects
-          </a>
-          – Collection of production-ready AI, GenAI, and GIS solutions.
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>
-      Email:
-      <a href="mailto:susheel123pandey@gmail.com">susheel123pandey@gmail.com</a>
-      |
-      LinkedIn:
-      <a href="https://linkedin.com/in/susheel7860">
-        linkedin.com/in/susheel7860
-      </a>
-    </p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>Designed & Built by Susheel Kumar Pandey</p>
+      <p class="footer-tagline">Building Intelligent Systems That Scale</p>
+    </div>
   </footer>
+
+  <script>
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.expertise-card, .project-card, .timeline-item, .contact-card, .detail-card, .section-header, .about-text, .stat').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+
+      // Hide/show navbar on scroll direction
+      if (currentScroll > lastScroll && currentScroll > 200) {
+        navbar.classList.add('nav-hidden');
+      } else {
+        navbar.classList.remove('nav-hidden');
+      }
+      lastScroll = currentScroll;
+    });
+
+    // Animated counter for stats
+    const animateCounter = (element, target, suffix = '') => {
+      let current = 0;
+      const increment = target / 50;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = target + suffix;
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current) + suffix;
+        }
+      }, 30);
+    };
+
+    // Trigger counter animation when stats are visible
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+          entry.target.classList.add('counted');
+          const target = entry.target.dataset.target;
+          if (target) {
+            animateCounter(entry.target, parseInt(target));
+          }
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-target]').forEach(el => {
+      statsObserver.observe(el);
+    });
+
+    // Magnetic button effect
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0)';
+      });
+    });
+
+    // Parallax effect for orbs
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      document.querySelectorAll('.glow-orb').forEach((orb, index) => {
+        const speed = (index + 1) * 0.05;
+        orb.style.transform = `translateY(${scrolled * speed}px)`;
+      });
+    });
+
+    // Text reveal animation for section headers
+    document.querySelectorAll('.section-header h2').forEach(header => {
+      const text = header.textContent;
+      header.innerHTML = text.split('').map((char, i) =>
+        `<span style="animation-delay: ${i * 0.03}s">${char === ' ' ? '&nbsp;' : char}</span>`
+      ).join('');
+    });
+
+    // Tech tags stagger animation on card hover
+    document.querySelectorAll('.expertise-card').forEach(card => {
+      const tags = card.querySelectorAll('.tech-tags span');
+      card.addEventListener('mouseenter', () => {
+        tags.forEach((tag, i) => {
+          tag.style.transitionDelay = `${i * 0.05}s`;
+        });
+      });
+      card.addEventListener('mouseleave', () => {
+        tags.forEach(tag => {
+          tag.style.transitionDelay = '0s';
+        });
+      });
+    });
+
+    // Project card tilt effect
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+        card.style.transform = `perspective(1000px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg) translateY(-5px)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateY(0) rotateX(0) translateY(0)';
+      });
+    });
+
+    // Typing effect for hero subtitle
+    const heroSubtitle = document.querySelector('.hero-subtitle');
+    if (heroSubtitle) {
+      const originalText = heroSubtitle.innerHTML;
+      heroSubtitle.style.opacity = '1';
+    }
+
+    // Add loaded class after page load for initial animations
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
+
+    // Contact card mouse tracking for glow effect
+    document.querySelectorAll('.contact-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty('--mouse-x', x + '%');
+        card.style.setProperty('--mouse-y', y + '%');
+      });
+    });
+
+    // Expertise card shine effect
+    document.querySelectorAll('.expertise-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        card.style.setProperty('--shine-x', x + 'px');
+        card.style.setProperty('--shine-y', y + 'px');
+      });
+    });
+  </script>
 </body>
+
 </html>

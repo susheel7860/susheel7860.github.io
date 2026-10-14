@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Susheel Kumar Pandey | AI Engineer</title>
+  <title>Susheel Kumar Pandey | AI/ML Engineer</title>
+  <meta name="description" content="Susheel Kumar Pandey: AI/ML Engineer working on Computer Vision and LLM Automation. Projects, skills and experience.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -63,9 +64,9 @@
         <span class="line line-3">That Scale</span>
       </h1>
       <p class="hero-subtitle">
-        Senior AI Engineer crafting production-grade Computer Vision, LLM, and Geospatial systems.
-        <span class="stat-inline">4+ years</span> of delivering ML solutions processing <span class="stat-inline">1M+
-          records/day</span>.
+        <strong>AI/ML Engineer: Computer Vision &amp; LLM Automation.</strong>
+        <span class="stat-inline">5 years</span> shipping production ML, from real-time vision on the edge to
+        multi-agent LLM platforms processing <span class="stat-inline">1M+ records/day</span>.
       </p>
       <div class="hero-cta">
         <a href="#projects" class="btn btn-primary">
@@ -78,22 +79,17 @@
       </div>
     </div>
     <div class="hero-visual">
-      <div class="neural-network">
-        <div class="node node-1"></div>
-        <div class="node node-2"></div>
-        <div class="node node-3"></div>
-        <div class="node node-4"></div>
-        <div class="node node-5"></div>
-        <div class="node node-6"></div>
-        <div class="node node-center"></div>
-        <svg class="connections" viewBox="0 0 300 300">
-          <line class="conn" x1="50" y1="50" x2="150" y2="150" />
-          <line class="conn" x1="250" y1="50" x2="150" y2="150" />
-          <line class="conn" x1="50" y1="250" x2="150" y2="150" />
-          <line class="conn" x1="250" y1="250" x2="150" y2="150" />
-          <line class="conn" x1="150" y1="30" x2="150" y2="150" />
-          <line class="conn" x1="150" y1="270" x2="150" y2="150" />
-        </svg>
+      <div class="terminal" id="terminal" aria-label="Interactive terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">susheel@portfolio: ~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+        <form class="terminal-input" id="terminal-form" autocomplete="off">
+          <span class="prompt">$</span>
+          <input id="terminal-cmd" type="text" spellcheck="false" aria-label="Terminal command" placeholder="type 'help'">
+        </form>
+        <div class="terminal-hints" id="terminal-hints"></div>
       </div>
     </div>
   </header>
@@ -179,7 +175,7 @@
       <h2>Technical Expertise</h2>
     </div>
     <div class="expertise-grid">
-      <div class="expertise-card" data-category="cv">
+      <div class="expertise-card" data-category="cv" data-filter="cv" tabindex="0" role="button" aria-label="Show related projects">
         <div class="card-header">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -204,9 +200,10 @@
           <span class="metric-value">97%</span>
           <span class="metric-label">Detection Accuracy</span>
         </div>
+        <span class="card-cta">See projects →</span>
       </div>
 
-      <div class="expertise-card" data-category="llm">
+      <div class="expertise-card" data-category="llm" data-filter="llm" tabindex="0" role="button" aria-label="Show related projects">
         <div class="card-header">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -229,9 +226,10 @@
           <span class="metric-value">35%</span>
           <span class="metric-label">Search Accuracy Boost</span>
         </div>
+        <span class="card-cta">See projects →</span>
       </div>
 
-      <div class="expertise-card" data-category="geo">
+      <div class="expertise-card" data-category="geo" data-filter="data" tabindex="0" role="button" aria-label="Show related projects">
         <div class="card-header">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -256,9 +254,10 @@
           <span class="metric-value">65%</span>
           <span class="metric-label">Automation Gain</span>
         </div>
+        <span class="card-cta">See projects →</span>
       </div>
 
-      <div class="expertise-card" data-category="eng">
+      <div class="expertise-card" data-category="eng" data-filter="fullstack" tabindex="0" role="button" aria-label="Show related projects">
         <div class="card-header">
           <div class="card-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -282,6 +281,7 @@
           <span class="metric-value">50%</span>
           <span class="metric-label">Pipeline Speedup</span>
         </div>
+        <span class="card-cta">See projects →</span>
       </div>
     </div>
   </section>
@@ -341,85 +341,19 @@
           </ul>
         </div>
       </article>
-
-      <article class="project-card">
-        <div class="project-content">
-          <div class="project-meta">
-            <span class="project-tag">Computer Vision</span>
-            <span class="project-tag">Edge AI</span>
-          </div>
-          <h3>Driver Monitoring System</h3>
-          <p>
-            Real-time detection of driver drowsiness and distraction with YOLO v7,
-            optimized for edge deployment in fleet management systems.
-          </p>
-          <div class="project-stats">
-            <div class="project-stat">
-              <span class="value">97%+</span>
-              <span class="label">Accuracy</span>
-            </div>
-            <div class="project-stat">
-              <span class="value">&lt;150ms</span>
-              <span class="label">Response Time</span>
-            </div>
-            <div class="project-stat">
-              <span class="value">1000+</span>
-              <span class="label">Daily Verifications</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-content">
-          <div class="project-meta">
-            <span class="project-tag">Geospatial</span>
-            <span class="project-tag">3D Modeling</span>
-          </div>
-          <h3>Geospatial AI & 3D Automation</h3>
-          <p>
-            QGIS plugins for satellite imagery analysis and automated city-scale
-            3D building generation from aerial imagery and DEM data.
-          </p>
-          <div class="project-stats">
-            <div class="project-stat">
-              <span class="value">65%</span>
-              <span class="label">Effort Reduction</span>
-            </div>
-            <div class="project-stat">
-              <span class="value">40%</span>
-              <span class="label">Model Size Cut</span>
-            </div>
-            <div class="project-stat">
-              <span class="value">25%</span>
-              <span class="label">Data Accuracy Gain</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-content">
-          <div class="project-meta">
-            <span class="project-tag">NLP</span>
-            <span class="project-tag">Open Source</span>
-          </div>
-          <h3>Amazon Food Review System</h3>
-          <p>
-            NLP-based system for extracting insights from customer reviews,
-            featuring sentiment analysis and topic modeling.
-          </p>
-          <a href="https://github.com/susheel7860/amazon-food-review-system" class="project-link" target="_blank">
-            View on GitHub
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-          </a>
-        </div>
-      </article>
     </div>
+
+    <div class="project-toolbar">
+      <div class="filter-chips" id="filter-chips" role="tablist"></div>
+      <label class="project-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input id="project-search" type="search" placeholder="Search projects or tech  ( / )" aria-label="Search projects">
+      </label>
+    </div>
+    <p class="project-count" id="project-count"></p>
+    <div class="project-grid" id="project-grid"></div>
+    <div class="gh-live" id="gh-live" hidden></div>
+
   </section>
 
   <!-- Timeline/Experience Section -->
@@ -534,6 +468,15 @@
     </div>
   </footer>
 
+  <div class="modal" id="project-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="projects.js"></script>
   <script>
     // Smooth scroll for navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

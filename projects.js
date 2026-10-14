@@ -12,7 +12,7 @@
 
   const PROJECTS = [
     {
-      id: 'atlas', title: 'ATLAS: Geospatial Market-Intelligence Platform', cats: ['geo', 'platform'], status: 'ClarityX',
+      id: 'atlas', featured: true, title: 'ATLAS: Geospatial Market-Intelligence Platform', cats: ['geo', 'platform'], status: 'ClarityX',
       summary: 'Full backend of a multi-tenant retail site-selection platform: city prioritisation, micro-hotspot, pincode and catchment analysis.',
       stack: ['Python', 'FastAPI', 'Async SQLAlchemy', 'PostGIS', 'AWS', 'GitLab CI'],
       highlights: ['55k LOC Python/FastAPI, 27 async API routers, 18 swappable plugins, hexagonal architecture enforced in CI', 'Six geospatial scoring engines (grid hotspot, city, pincode, catchment, rural, hybrid) plus a BFSI vertical on Mappls mGIS data, driven by versioned YAML weights', 'UniversalSchema: a single JSON contract for all outputs', 'Production on AWS (EC2, RDS, S3, Cognito, Verified Permissions multi-tenant RBAC, Secrets Manager) with nginx and a 4-stage GitLab CI pipeline backed by 20k LOC of tests', 'Key p90 latencies cut by an order of magnitude via percentile-driven profiling and single-flight caching'],
@@ -79,6 +79,9 @@
     },
   ];
 
+  // The featured project has its own card above the grid; it stays openable from the terminal
+  const GRID = PROJECTS.filter((p) => !p.featured);
+
   const $ = (sel) => document.querySelector(sel);
   const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const catLabel = (id) => CATEGORIES.find((c) => c.id === id).label;
@@ -93,11 +96,11 @@
   const count = $('#project-count');
 
   chips.innerHTML = CATEGORIES.map((c) => {
-    const n = c.id === 'all' ? PROJECTS.length : PROJECTS.filter((p) => p.cats.includes(c.id)).length;
+    const n = c.id === 'all' ? GRID.length : GRID.filter((p) => p.cats.includes(c.id)).length;
     return `<button class="chip${c.id === 'all' ? ' active' : ''}" data-cat="${c.id}" role="tab">${c.label}<span>${n}</span></button>`;
   }).join('');
 
-  grid.innerHTML = PROJECTS.map((p) => `
+  grid.innerHTML = GRID.map((p) => `
     <article class="pcard" data-id="${p.id}" tabindex="0" role="button" aria-label="${esc(p.title)} details">
       <div class="pcard-top">
         <span class="status ${statusClass(p.status)}">${p.status}</span>
@@ -122,7 +125,7 @@
       if (ok) shown++;
     });
     chips.querySelectorAll('.chip').forEach((c) => c.classList.toggle('active', c.dataset.cat === filter));
-    count.textContent = shown ? `Showing ${shown} of ${PROJECTS.length} projects` : 'No projects match. Try another filter.';
+    count.textContent = shown ? `Showing ${shown} of ${GRID.length} projects` : 'No projects match. Try another filter.';
   };
 
   const setFilter = (cat, scroll) => {

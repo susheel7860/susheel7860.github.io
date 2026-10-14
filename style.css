@@ -1932,42 +1932,8 @@ body.loaded {
 }
 
 .status.open-source { color: #28c840; }
-.status.production { color: var(--accent-gold); }
-.status.private { color: var(--accent-secondary); }
-
-/* live GitHub strip */
-.gh-live {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px 20px;
-  margin-top: 28px;
-  padding: 14px 18px;
-  background: var(--bg-secondary);
-  border: 1px dashed rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--text-secondary);
-}
-
-.gh-live[hidden] { display: none; }
-.gh-live strong { color: var(--text-primary); font-weight: 500; margin-left: -12px; }
-.gh-live a { color: var(--accent-primary); }
-
-.live-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #28c840;
-  box-shadow: 0 0 0 0 rgba(40, 200, 64, 0.6);
-  animation: livePulse 2s infinite;
-}
-
-@keyframes livePulse {
-  70% { box-shadow: 0 0 0 8px rgba(40, 200, 64, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(40, 200, 64, 0); }
-}
+.status.clarityx { color: var(--accent-gold); }
+.status.mapmyindia { color: var(--accent-secondary); }
 
 /* ========================================
    PROJECT MODAL
@@ -2053,7 +2019,6 @@ body.modal-open { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) {
   .pcard, .modal-panel, .terminal { animation: none; opacity: 1; }
-  .live-dot { animation: none; }
 }
 
 html, body { overflow-x: clip; }
